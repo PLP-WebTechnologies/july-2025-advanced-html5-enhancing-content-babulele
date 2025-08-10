@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Showcase: Lists, Tables, Media & Form</title>
+  
+</head>
+<body>
+
+<header>
+  <h1>Multi-Section Web Page Showcase</h1>
+  <p>Featuring Lists, Tables, Media, and a Complete HTML5 Form</p>
+</header>
+
+<nav>
+  <a href="#lists">Lists</a>
+  <a href="#table">Table</a>
+  <a href="#media">Media</a>
+  <a href="#form">Form</a>
+</nav>
+
+<!-- Lists Section -->
+<section id="lists">
+  <h2>Creative Lists</h2>
+  <h3>Top 3 Programming Languages (Ordered)</h3>
+  <ol>
+    <li>Python</li>
+    <li>JavaScript</li>
+    <li>Java</li>
+  </ol>
+
+  <h3>My Daily Productivity Essentials (Unordered)</h3>
+  <ul>
+    <li>Strong coffee</li>
+    <li>Clean workspace</li>
+    <li>Task management app</li>
+  </ul>
+
+  <h3>Web Technologies (Description List)</h3>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Hypertext Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+  </dl>
+</section>
+
+<!-- Table Section -->
+<section id="table">
+  <h2>Comparison Table</h2>
+  <table>
+    <caption>Programming Language Comparison</caption>
+    <thead>
+      <tr>
+        <th>Language</th>
+        <th>Use Case</th>
+        <th>Popularity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Python</td>
+        <td>Data Science, Web Development</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Web Frontend & Backend</td>
+        <td>Very High</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>Enterprise Applications</td>
+        <td>High</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Media Section -->
+<section id="media">
+  <h2>Media Showcase</h2>
+  <img src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg" alt="Placeholder Image - Scenic Landscape" style="width: 600px; height: 400px;">
+  <video controls width="600" height="400">
+    <source src="https://videos.pexels.com/video-files/2278095/2278095-hd_1920_1080_30fps.mp4" type="video/mp4">
+  </video>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+</section>
+
+<!-- Form Section -->
+<section id="form">
+  <h2>HTML5 Contact Form</h2>
+  <form action="#" method="post">
+    
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="wycliffe sure">
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email">
+
+      <label for="userid">User ID:</label>
+      <input type="text" id="userid" name="userid" value="USR-001" readonly>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="^\+?[0-9]{10,15}$" placeholder="+254712345678" required>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Message Details</legend>
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required minlength="5">
+      
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="">--Select--</option>
+        <option value="feedback">Feedback</option>
+        <option value="support">Support</option>
+        <option value="inquiry">General Inquiry</option>
+      </select>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Preferences</legend>
+      <label>
+        <input type="checkbox" name="subscribe" value="yes">
+        Subscribe to newsletter
+      </label>
+      
+      <p>Preferred contact method:</p>
+      <label>
+        <input type="radio" name="contact_method" value="email" required>
+        Email
+      </label>
+      <label>
+        <input type="radio" name="contact_method" value="phone">
+        Phone
+      </label>
+    </fieldset>
+
+    <fieldset>
+     <legend>Additional Information</legend>
+    
+     <label for="birthdate">Birth Date:</label>
+     <input type="date" id="birthdate" name="birthdate">
+    
+     <label for="website">Website:</label>
+     <input type="url" id="website" name="website" placeholder="https://example.com">
+    
+     <label for="rating">Satisfaction (0-10):</label>
+     <input type="range" id="rating" name="rating" min="0" max="10">
+    
+     <label for="color">Theme Color:</label>
+     <input type="color" id="color" name="color" value="#3366CC">
+</fieldset>
+    
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Web Showcase. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
